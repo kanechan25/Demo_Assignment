@@ -1,0 +1,44 @@
+
+@font-face {
+    font-family: artifakt-bold;
+    src: url("../fonts/ArtifaktLegend-Bold.woff.ttf");
+}
+@font-face {
+    font-family: artifakt-medium;
+    src: url("../fonts/ArtifaktElement-Medium.woff.ttf");
+}
+@font-face {
+    font-family: artifakt-light;
+    src: url("../fonts/ArtifaktElement-Light.woff.ttf");
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes notificationGrow {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+        opacity: 0;
+    }
+    to {
+        transform: scale(var(--growth-to));
+        opacity: 1;
+    }
+}
