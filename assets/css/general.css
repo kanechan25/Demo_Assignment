@@ -1,0 +1,54 @@
+/* #region General */
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+:root {
+  --color-bg: #fbfbfb;
+  --color-white: #fff;
+  --color-wheat: #eee;
+  --color-black: #000;
+  --color-blur: rgb(58, 56, 56);
+  --color-boder: rgb(34, 25, 85);
+  --color-title: rgb(32, 32, 32);
+  --color-modal: rgb(200, 206, 207);
+}
+html {
+  box-sizing: border-box;
+
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+}
+
+body, p, a, ul, li, h1, h2, h3, h4, h5, h6 {
+  margin: 10px;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  font-style: normal;
+  font-weight: 100;
+  background-color: var(--color-bg);
+  color: var(--color-black);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 1.4rem;
+  font-family: 'artifakt-medium', sans-serif;
+  display: block;
+}
+
+button {
+  background: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+/* #endregion General */
