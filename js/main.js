@@ -17,24 +17,24 @@ if (appElement) {
 // #endregion Render html
 // #region 2. Modal Box
 
-let overlayElm = $("#overlay");
-
+// #region 2.1. Open Modal Box
 let modalElm = $("#app__modal");
 let headerElm = $("#modal__header");
 
 let confirmElm = $("#app__confirm");
 let confirmHeaderElm = $("#confirm__header");
 
-// #region 2.1. Open Modal Box
 let btnElm = $("#modal_btn");
 let btnClose = $("#modal-close-btn");
 let btnUpload = $("#modal-upload-btn");
 let btnCClose = $("#confirm-close-btn");
 let btnConfirm = $("#confirm-upload-btn");
 let btnX = $("#fa-xmark");
+let maxBtn = $("#fa-maximize");
+let minBtn = $("#fa-minus");
 
 openModal(btnElm, modalElm);
-openModal(btnUpload, confirmElm);
+openConfirm(btnUpload, confirmElm, minBtn);
 
 function openModal(btn, elm) {
   if (btn && elm) {
@@ -43,14 +43,22 @@ function openModal(btn, elm) {
     };
   }
 }
+function openConfirm(btn, elm, disableElm) {
+  if (btn && elm) {
+    btn.onclick = function () {
+      elm.style.display = "block";
+      disableElm.style.visibility = "hidden";
+    };
+  }
+}
 // #endregion
 
 // #region 2.1. Close Modal Box
 
 closeModal(btnClose, modalElm);
-closeModal(btnCClose, confirmElm);
-closeModal(btnConfirm, confirmElm);
 closeModal(btnX, modalElm);
+closeConfirm(btnCClose, confirmElm, minBtn);
+closeConfirm(btnConfirm, confirmElm, minBtn);
 
 function closeModal(btn, elm) {
   if (btn && elm) {
@@ -59,6 +67,15 @@ function closeModal(btn, elm) {
     };
   }
 }
+function closeConfirm(btn, elm, enableElm) {
+  if (btn && elm) {
+    btn.onclick = function () {
+      elm.style.display = "none";
+      enableElm.style.visibility = "visible";
+    };
+  }
+}
+
 // #endregion
 
 // #region 2.3. Drag Element
@@ -105,6 +122,29 @@ function dragElement(elm, headerElm) {
     document.onmousemove = 0;
   }
 }
+// #endregion
+
+// #region 2.4. Minimize - Maximize
+
+minimizeModal(minBtn, maxBtn);
+function minimizeModal(minBtn, maxBtn) {
+  if (minBtn && maxBtn) {
+    minBtn.onclick = function () {
+      modalElm.style.visibility = "hidden";
+      maxBtn.style.display = "block";
+    };
+  }
+}
+maximizeModal(minBtn, maxBtn);
+function maximizeModal(minBtn, maxBtn) {
+  if (minBtn && maxBtn) {
+    maxBtn.onclick = function () {
+      modalElm.style.visibility = "visible";
+      maxBtn.style.display = "none";
+    };
+  }
+}
+
 // #endregion
 
 // #endregion Modal Box

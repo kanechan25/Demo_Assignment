@@ -2,7 +2,13 @@ export const upload = {
   id: 1,
   header: "Upload User's Information",
   title: "Full-stack Web Developer",
-  skill: "Reactjs",
+  react: "ReactJs",
+  redux: "Redux",
+  node: "NodeJs",
+  express: "ExpressJs",
+  mongoDB: "MongoDB",
+  mySQL: "MySQL",
+  aws: "ExpressJs",
   btn: "Upload",
 };
 export const confirm = {

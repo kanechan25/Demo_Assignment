@@ -1,11 +1,11 @@
 #app__mini {
     height: 24px;
     width: 24px;
-    display: none;
 }
 #app__mini #fa-maximize {
+    display: none;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 

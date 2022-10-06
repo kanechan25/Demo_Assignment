@@ -13,16 +13,7 @@
     top: 56%;
     z-index: 1000;
 }
-#overlay {
-    background-color: rgba(0,0,0,0.3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    z-index: 99;
-}
+
 .modal-box {
     border:1px solid #ccc;
     -webkit-box-shadow:0 1px 5px rgba(0,0,0,.2);
@@ -85,8 +76,16 @@
   #img-avatar {
     margin-left: 12px;
   }
-  #input-skills {
+  #input-name {
+    height: 20px;
+    width: 200px;
+  }
+  #header-skills {
     margin-top: 6px;
+  }
+  #input-skills {
+    height: 22px;
+    width: 200px;
   }
   #img-avatar {
     cursor: pointer;
