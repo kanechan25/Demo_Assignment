@@ -19,21 +19,23 @@ function Modal(upload) {
             <span class="content-headline" id="header-skills">Skills: </span>
           </div>
           <div class="content-right">
-            <span class="content-headline" id="input-title">${upload.title}</span>
+            <span class="content-headline" id="input-title"
+              >${upload.title}</span
+            >
             <input
               type="text"
               class="content-headline"
               id="input-name"
               name="avatar"
             />
-            <select name="&quot; id="input-skills">
-              <option value=${upload.react}> ${upload.react} </option>;
-              <option value=${upload.redux}> ${upload.redux} </option>;
-              <option value=${upload.node}> ${upload.node} </option>;
-              <option value=${upload.express}> ${upload.express} </option>;
-              <option value=${upload.mongoDB}> ${upload.mongoDB} </option>;
-              <option value=${upload.mySQL}> ${upload.mySQL} </option>;
-              <option value=${upload.aws}> ${upload.aws} </option>;
+            <select id="input-skills">
+              <option value=${upload.react}>${upload.react}</option>
+              <option value=${upload.redux}>${upload.redux}</option>
+              <option value=${upload.node}>${upload.node}</option>
+              <option value=${upload.express}>${upload.express}</option>
+              <option value=${upload.mongoDB}>${upload.mongoDB}</option>
+              <option value=${upload.mySQL}>${upload.mySQL}</option>
+              <option value=${upload.aws}>${upload.aws}</option>
             </select>
           </div>
         </div>

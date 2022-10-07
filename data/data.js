@@ -8,7 +8,7 @@ export const upload = {
   express: "ExpressJs",
   mongoDB: "MongoDB",
   mySQL: "MySQL",
-  aws: "ExpressJs",
+  aws: "AWS",
   btn: "Upload",
 };
 export const confirm = {

@@ -33,6 +33,9 @@ let btnX = $("#fa-xmark");
 let maxBtn = $("#fa-maximize");
 let minBtn = $("#fa-minus");
 
+let nameInput = $("#input-name");
+let skillInput = $("#input-skills");
+
 openModal(btnElm, modalElm);
 openConfirm(btnUpload, confirmElm, minBtn);
 
@@ -58,7 +61,6 @@ function openConfirm(btn, elm, disableElm) {
 closeModal(btnClose, modalElm);
 closeModal(btnX, modalElm);
 closeConfirm(btnCClose, confirmElm, minBtn);
-closeConfirm(btnConfirm, confirmElm, minBtn);
 
 function closeModal(btn, elm) {
   if (btn && elm) {
@@ -143,6 +145,23 @@ function maximizeModal(minBtn, maxBtn) {
       maxBtn.style.display = "none";
     };
   }
+}
+// #endregion
+
+// #region 2.5. Submit
+btnConfirm.onclick = function () {
+  confirmUpload();
+  closeConfirm(btnConfirm, confirmElm, minBtn);
+};
+function confirmUpload() {
+  let imgInput = $("#img-avatar").files[0];
+  const data = {
+    name: nameInput.value,
+    skill: skillInput.value,
+    image: imgInput,
+  };
+  alert(`You have submitted data: 
+  ${JSON.stringify(data)}`);
 }
 
 // #endregion
