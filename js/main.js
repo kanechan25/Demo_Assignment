@@ -61,6 +61,7 @@ function openConfirm(btn, elm, disableElm) {
 closeModal(btnClose, modalElm);
 closeModal(btnX, modalElm);
 closeConfirm(btnCClose, confirmElm, minBtn);
+closeConfirm(btnConfirm, confirmElm, minBtn);
 
 function closeModal(btn, elm) {
   if (btn && elm) {
@@ -149,10 +150,7 @@ function maximizeModal(minBtn, maxBtn) {
 // #endregion
 
 // #region 2.5. Submit
-btnConfirm.onclick = function () {
-  confirmUpload();
-  closeConfirm(btnConfirm, confirmElm, minBtn);
-};
+
 function confirmUpload() {
   let imgInput = $("#img-avatar").files[0];
   const data = {
