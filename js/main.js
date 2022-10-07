@@ -160,8 +160,7 @@ function confirmUpload() {
     skill: skillInput.value,
     image: imgInput,
   };
-  alert(`You have submitted data: 
-  ${JSON.stringify(data)}`);
+  console.log(`You have submitted data: ${JSON.stringify(data)}`);
 }
 
 // #endregion
