@@ -2,7 +2,7 @@
 
 ## <a href="https://kanechan25.github.io/Assignment_Modal_Box/" target="_blank" rel="noopener noreferrer" title="https://kanechan25.github.io/Assignment_Modal_Box/">Click here to go to my demo</a>
 
-- Assignments for my mentee, I have done this repo as a demo submission.
+- An assignment for my mentee, I have done this repo as a demo submission.
 - It's written by Html + Css + Purely JavaScript
 
 - Hoping it make you enjoy!
